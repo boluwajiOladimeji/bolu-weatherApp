@@ -37,6 +37,7 @@ const loadData = async function () {
     return;
   }
   displayData(data);
+  search.value = '';
 };
 
 // Load error
