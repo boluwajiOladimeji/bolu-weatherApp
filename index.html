@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./app.js" defer></script>
+    <title>Simple tailwind starter</title>
+  </head>
+  <body>
+    <div
+      class="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-600 to-blue-600 p-6">
+      <div
+        class="weather-center bg-weather bg-cover bg-center bg-no-repeat py-20 px-8 rounded-lg">
+        <h1 class="text-2xl text-white text-center mb-4">Weather App</h1>
+        <form class="pt-3 mb-2 form">
+          <input
+            type="text"
+            class="bg-black bg-opacity-80 rounded-tl-lg rounded-br-lg border-b-4 border-b-green-500 placeholder:text-center placeholder:text-white border-gray-500 px-2 py-1 w-full mb-1 focus:outline-none text-center text-white input"
+            placeholder="Search by city name" />
+          <button
+            class="w-full py-1 px-2 text-center text-white font-bold rounded uppercase bg-orange-600">
+            submit
+          </button>
+          <p class="text-center text-white font-semibold hidden error"></p>
+        </form>
+        <!-- weather info -->
+        <div class="text-center text-white py-4 px-12">
+          <!-- weather icon -->
+          <div class="weather-icon text-center mb-4 flex justify-center">
+            <img src="" alt="" class="icon" />
+          </div>
+          <!-- weather-city -->
+          <div
+            class="weather-city-date text-center pb-4 border-b border-b-white mb-2">
+            <p class="text-xl font-bold mb-2 city">Lagos, NG</p>
+            <p class="date">Thursday, 26 Nov 2020</p>
+          </div>
+          <!-- Weather details -->
+          <div
+            class="weather-details text-left flex flex-col space-y-1 font-semibold text-md">
+            <p>Temp: <span class="temp">26C</span></p>
+            <p>Weather: <span class="temp-detail">Clouds</span></p>
+            <p>Temp Range: <span class="temp-range">26C / 26C</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
